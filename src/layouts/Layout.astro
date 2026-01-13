@@ -1,0 +1,86 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = 'Professional HVAC services for residential and commercial properties. Expert heating, cooling, and refrigeration solutions.', image = '/og-image.jpg' } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO -->
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Pro Temp LLC",
+        "description": "Professional HVAC services for residential and commercial properties",
+        "url": "https://protemphvacr.com",
+        "telephone": "+1-555-HVAC-PRO",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Your City",
+          "addressRegion": "Your State",
+          "postalCode": "12345",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        },
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-16:00",
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.7128,
+            "longitude": -74.0060
+          },
+          "geoRadius": 50000
+        },
+        "priceRange": "$$",
+        "image": "https://protemphvacr.com/og-image.jpg"
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <slot />
+    <script src="/src/scripts/animations.ts"></script>
+    
+    <style>
+      .navbar-scrolled {
+        @apply bg-white/95 backdrop-blur-md shadow-lg;
+      }
+    </style>
+  </body>
+</html>

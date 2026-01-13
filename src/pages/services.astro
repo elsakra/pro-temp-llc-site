@@ -1,0 +1,291 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="HVAC Services - Pro Temp LLC" description="Comprehensive HVAC services including installation, repair, maintenance, and emergency service for residential and commercial properties.">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700">
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="relative z-10 container-custom text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Professional HVAC Services
+        </h1>
+        <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+          Complete heating, ventilation, air conditioning, and refrigeration solutions for your home and business.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <!-- HVAC Installation -->
+          <div class="card p-8">
+            <div class="flex items-start space-x-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">HVAC Installation</h3>
+                <p class="text-gray-600 mb-6">
+                  Professional installation of complete heating and cooling systems designed for maximum efficiency and comfort.
+                </p>
+                <ul class="space-y-2 text-gray-600 mb-6">
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Central Air Conditioning Systems</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Heat Pump Installation</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Ductwork Design & Installation</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Smart Thermostat Integration</span>
+                  </li>
+                </ul>
+                <a href="/contact" class="btn-primary">Get Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- AC Repair -->
+          <div class="card p-8">
+            <div class="flex items-start space-x-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">AC Repair & Service</h3>
+                <p class="text-gray-600 mb-6">
+                  Fast and reliable air conditioning repair services to restore your comfort quickly and efficiently.
+                </p>
+                <ul class="space-y-2 text-gray-600 mb-6">
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Emergency AC Repairs</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>System Diagnostics</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Refrigerant Recharge</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Component Replacement</span>
+                  </li>
+                </ul>
+                <a href="tel:+1-555-HVAC-PRO" class="btn-primary">Call Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heating Services -->
+          <div class="card p-8">
+            <div class="flex items-start space-x-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Heating Services</h3>
+                <p class="text-gray-600 mb-6">
+                  Complete heating solutions including furnace repair, installation, and maintenance to keep you warm.
+                </p>
+                <ul class="space-y-2 text-gray-600 mb-6">
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Furnace Repair & Installation</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Boiler Services</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Heat Pump Maintenance</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>System Upgrades</span>
+                  </li>
+                </ul>
+                <a href="/contact" class="btn-primary">Schedule Service</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maintenance Plans -->
+          <div class="card p-8">
+            <div class="flex items-start space-x-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Maintenance Plans</h3>
+                <p class="text-gray-600 mb-6">
+                  Preventive maintenance programs to keep your HVAC system running efficiently and extend its lifespan.
+                </p>
+                <ul class="space-y-2 text-gray-600 mb-6">
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Seasonal Tune-ups</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Filter Replacements</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>System Inspections</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Priority Service</span>
+                  </li>
+                </ul>
+                <a href="/contact" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial Services -->
+        <div class="bg-gray-50 rounded-2xl p-8 mb-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Commercial HVAC Services</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Comprehensive HVAC solutions for businesses, offices, and commercial properties of all sizes.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Rooftop Units</h3>
+              <p class="text-gray-600">Installation and maintenance of commercial rooftop HVAC systems.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Refrigeration</h3>
+              <p class="text-gray-600">Commercial refrigeration systems for restaurants and retail.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Energy Audits</h3>
+              <p class="text-gray-600">Comprehensive energy efficiency assessments and recommendations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency Service -->
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-8 text-center">
+          <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+            </svg>
+          </div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">24/7 Emergency Service</h2>
+          <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            HVAC emergencies don't wait for business hours. Our emergency service team is available around the clock to restore your comfort.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+1-555-HVAC-PRO" class="btn-primary text-lg px-8 py-4">
+              Call Emergency Line: (555) HVAC-PRO
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-primary-600">
+      <div class="container-custom text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Improve Your Comfort?
+        </h2>
+        <p class="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+          Contact us today for a free consultation and quote on any of our HVAC services.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="btn-secondary bg-white text-primary-600 hover:bg-gray-100">
+            Get Free Quote
+          </a>
+          <a href="tel:+1-555-HVAC-PRO" class="btn-primary bg-primary-700 hover:bg-primary-800">
+            Call (555) HVAC-PRO
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
